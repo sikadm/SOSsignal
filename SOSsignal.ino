@@ -1,43 +1,46 @@
 void setup() {
-  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW); //S = three short
+  delay(500);
+  
+  digitalWrite(12, HIGH);
   delay(1000);
-  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
   delay(1000);
-  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
   delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW); //S = three short
+  digitalWrite(12, LOW); //O = three long
+  delay(500);
+  
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW);
+  delay(500);
+  digitalWrite(12, HIGH);
+  delay(500);
+  digitalWrite(12, LOW); //S = three short
+  delay(500);
 
-  digitalWrite(13, HIGH);
-  delay(3000);
-  digitalWrite(13, LOW);
-  delay(1000);
-  digitalWrite(13, HIGH);
-  delay(3000);
-  digitalWrite(13, LOW);
-  delay(1000);
-  digitalWrite(13, HIGH);
-  delay(3000);
-  digitalWrite(13, LOW); //O = three long
-
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW); //S = three short
-
-  delay(5000); //separate individual SOS signals
+  delay(5000); //separate each SOS signal
 }
